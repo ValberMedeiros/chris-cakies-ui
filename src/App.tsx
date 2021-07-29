@@ -4,12 +4,14 @@ import AppRouter from "./routes/AppRouter";
 import {BrowserRouter} from "react-router-dom";
 import React from "react";
 import {Navbar} from "./components/Navbar";
+import Breadcrumbs from "./components/Breadcumbs";
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
+        <Navbar />
         <Box paddingTop={'70px'}>
-            <Navbar />
+            <Breadcrumbs />
             <AppRouter />
         </Box>
     </BrowserRouter>
